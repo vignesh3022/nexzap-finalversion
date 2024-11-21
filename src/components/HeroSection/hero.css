@@ -1,0 +1,104 @@
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 67px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.homepagebtn {
+  padding: 15px 40px;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homepagebtn:hover {
+  background: #eeeeee;
+  transform: translateY(-2px);
+}
+
+.homepagebtn:active {
+  background: #dddddd;
+  transform: translateY(0);
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide {
+  opacity: 0;
+  animation: slideFromBottom 1s ease-out forwards;
+}
+
+.animate-slide.title {
+  animation-delay: 0.2s;
+  opacity: 1;
+}
+
+.animate-slide.description {
+  animation-delay: 0.2s;
+  opacity: 1;
+}
+
+/* Add these new animation classes */
+.section-animate {
+  opacity: 0;
+  animation: slideFromBottom 1s ease-out forwards;
+  animation-play-state: paused;
+}
+
+.section-animate.animate {
+  animation-play-state: running;
+}
+
