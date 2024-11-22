@@ -164,7 +164,7 @@ const Products = () => {
             </Product>
           ))}
         </ProductContainer>
-        <MovingBanner text="Web Design • Logo Design • Mobile App Design • Product Design" />
+        <MovingBanner text="App Development • UI/UX Design • SaaS Products • Web Development • WALLET Gift Cards • TAGFLO RFID • PRIVATEBOT" />
       </Wrapper>
     </Container>
   )

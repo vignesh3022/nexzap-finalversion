@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 67px;
+  margin-top: 55px;
 }
 
 .hero-background {
@@ -24,7 +24,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .hero-text {
@@ -44,7 +44,7 @@
 
 .hero-text p {
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin-top: -12px;
   opacity: 0.9;
   font-family: "nasalization", sans-serif;
   position: relative;
@@ -52,19 +52,22 @@
 
 .homepagebtn {
   padding: 15px 40px;
-  border-radius: 9px;
-  background: #ffffff;
-  color: #000000;
+  border-radius: 0.8em;
+  background: white;
+  color: #4a00e0;
   border: none;
+  cursor: pointer;
+  font-family: inherit;
+  overflow: hidden;
   font-size: 1.1rem;
   font-weight: 600;
-  cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .homepagebtn:hover {
-  background: #eeeeee;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
   transform: translateY(-2px);
 }
 
