@@ -67,14 +67,20 @@ const HeroSection = () => {
             <h1 className="animate-slide title" style={{ wordSpacing: '10px' }}>
               Innovative Software Solutions
             </h1>
-            <p className="btn-shine animate-slide description" style={{ wordSpacing: '8px' }}>
+            <p className="animate-slide description" style={{ wordSpacing: '8px' }}>
               Building the future of technology
             </p>
           </div>
           <button className="homepagebtn animate-slide" onClick={handleButtonClick}>
             Explore Our Products
           </button>
-          <img ref={flowerRef} src={`${process.env.PUBLIC_URL}/images/flower.png`} alt="Flower" style={{ width: '450px', display: 'block', transition: 'transform 0.2s ease, opacity 0.5s ease' }} />
+          <img 
+            ref={flowerRef} 
+            className="hero-image" 
+            src={`${process.env.PUBLIC_URL}/images/flower.png`} 
+            alt="Flower" 
+            style={{ width: '450px', display: 'block', transition: 'transform 0.2s ease, opacity 0.5s ease' }} 
+          />
           <div className="fade-effect" />
         </div>
       </div>
