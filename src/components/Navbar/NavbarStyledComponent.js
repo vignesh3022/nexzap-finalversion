@@ -28,22 +28,22 @@ export const NavbarContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
-    width: 80%;    
-    padding: 0 6px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-decoration: none;
-    @media (max-width: 640px) {
-      padding: 0 0px;
+export const NavLogo = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 `;
+
 export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
     font-size: 18px;
 `;
+
 export const NavItems = styled.ul`
     width: 100%;
     display: flex;

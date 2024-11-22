@@ -67,7 +67,7 @@ const HeroSection = () => {
             <h1 className="animate-slide title" style={{ wordSpacing: '10px' }}>
               Innovative Software Solutions
             </h1>
-            <p className="animate-slide description" style={{ wordSpacing: '8px' }}>
+            <p className="btn-shine animate-slide description" style={{ wordSpacing: '8px' }}>
               Building the future of technology
             </p>
           </div>

@@ -43,7 +43,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo onClick={handleHomeClick}>
-         <img src="/images/nexlogo.png" alt="logo" style={{ width: '50px', height: 'auto' }} />
+          <img src="/images/nexlogo.png" alt="NexZap Logo" style={{ width: '50px', height: 'auto' }} />
         </NavLogo>
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <FaBars />
