@@ -24,23 +24,28 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 .hero-text {
   color: #ffffff;
   margin-bottom: 30px;
+  margin-top: 50px;
+  font-family: 'Good Times', sans-serif;
+
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: 'Good Times', sans-serif;
 }
 
 .hero-text p {
   font-size: 1.5rem;
   opacity: 0.9;
+  font-family: 'Good Times', sans-serif;
 }
 
 .homepagebtn {
@@ -53,6 +58,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 .homepagebtn:hover {
@@ -67,7 +73,7 @@
 
 @keyframes slideFromBottom {
   0% {
-    transform: translateY(100px);
+    transform: translateY(45px);
     opacity: 0;
   }
   100% {
@@ -76,22 +82,35 @@
   }
 }
 
+@keyframes spinAndZoom {
+  0% {
+    transform: rotate(0deg) scale(0.8); /* Start slightly smaller */
+  }
+  100% {
+    transform: rotate(15deg) scale(1); /* Spin to 15 degrees instead of 45 degrees */
+  }
+}
+
+@keyframes spinOnScroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Full spin on scroll */
+  }
+}
+
 .animate-slide {
   opacity: 0;
-  animation: slideFromBottom 1s ease-out forwards;
+  animation: slideFromBottom 0.5s ease-out forwards;
 }
 
-.animate-slide.title {
-  animation-delay: 0.2s;
-  opacity: 1;
+.animate-slide.title,
+.animate-slide.description,
+.animate-slide.homepagebtn {
+  animation-delay: 0s;
 }
 
-.animate-slide.description {
-  animation-delay: 0.2s;
-  opacity: 1;
-}
-
-/* Add these new animation classes */
 .section-animate {
   opacity: 0;
   animation: slideFromBottom 1s ease-out forwards;
@@ -101,4 +120,45 @@
 .section-animate.animate {
   animation-play-state: running;
 }
+
+.fade-effect {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.9) 100%);
+  margin-top: -200px; /* Decrease this value to reduce the gap */
+  z-index: 1; /* Ensure it appears above the background */
+  filter: blur(5px); /* Add blur effect */
+}
+
+img {
+  margin: 20px auto;
+  animation: spinAndZoom 3s ease-out forwards; /* Spin and zoom on page load */
+  opacity: 0; /* Start hidden */
+}
+
+img.scrolling {
+  animation: spinOnScroll 1s linear infinite; /* Spin while scrolling */
+  opacity: 1; /* Ensure the image is visible when scrolling */
+}
+
+.title-word {
+  margin-right: 10px; /* Adjust this value for desired spacing */
+}
+
+.animate-slide.title {
+  animation-delay: 0.2s;
+}
+
+.animate-slide.description {
+  animation-delay: 0.2s;
+}
+
+.animate-slide.homepagebtn {
+  animation-delay: 0.6s;
+}
+
+
+  
+
 
